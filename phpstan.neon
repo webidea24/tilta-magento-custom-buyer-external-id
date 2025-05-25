@@ -1,0 +1,20 @@
+includes:
+    - vendor/bitexpert/phpstan-magento/extension.neon
+
+parameters:
+    level: max
+    fileExtensions:
+        - php
+        - phtml
+    paths:
+        - src/
+    magento:
+        magentoRoot: ../../
+    excludePaths:
+        - src/Tests
+    reportUnmatchedIgnoredErrors: false
+    ignoreErrors:
+        - '#with no value type specified in iterable type array.#'
+        - '#type has no value type specified in iterable type array.#'
+        - '#has no value type specified in iterable type array.#'
+        - '#Parameter \#1 \(array\|string\) of echo cannot be converted to string.#'

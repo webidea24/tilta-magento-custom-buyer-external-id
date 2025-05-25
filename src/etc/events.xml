@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="tilta_payment_generate_buyer_external_id">
+        <observer name="custom-buyer-id" instance="Tilta\CustomBuyerExternalId\Observer\GenerateBuyerExternalIdObserver"/>
+    </event>
+</config>
